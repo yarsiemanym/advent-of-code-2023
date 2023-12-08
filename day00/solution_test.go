@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yarsiemanym/advent-of-code-2022/common"
+	"github.com/yarsiemanym/advent-of-code-2023/common"
 )
 
 func Test_Solve_Test1(t *testing.T) {
 	puzzle := &common.Puzzle{
-		Year:      2022,
+		Year:      2023,
 		Day:       0,
 		InputFile: "test1.txt",
 	}

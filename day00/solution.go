@@ -7,7 +7,7 @@ import (
 	"time"
 
 	log "github.com/sirupsen/logrus"
-	"github.com/yarsiemanym/advent-of-code-2022/common"
+	"github.com/yarsiemanym/advent-of-code-2023/common"
 )
 
 func Solve(puzzle *common.Puzzle) common.Answer {
