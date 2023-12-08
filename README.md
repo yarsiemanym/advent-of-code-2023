@@ -1,6 +1,6 @@
-# Advent of Code 2022
+# Advent of Code 2023
 
-Using the [Advent of Code 2022](https://adventofcode.com/2022/) puzzles to become more proficient in [Go](https://golang.org/).
+Using the [Advent of Code 2023](https://adventofcode.com/2023/) puzzles to become more proficient in [Go](https://golang.org/).
 
 ## Environment Variables
 
@@ -20,7 +20,7 @@ This repo's [`Makefile`](./Makefile) automates many useful operations.
 
 ### make setup
 
-Downloads and installs [Go 1.19.3](https://go.dev/dl/) and downloads all of this application's package dependencies.
+Downloads and installs [Go 1.21.5](https://go.dev/dl/) and downloads all of this application's package dependencies.
 
 ### make test
 
@@ -28,15 +28,15 @@ Runs all unit tests.
 
 ### make build
 
-Builds the `advent-of-code-2022` executable in the current directory.
+Builds the `advent-of-code-2023` executable in the current directory.
 
 ### make clean
 
-Deletes all build artifacts from the current directory, i.e. the `advent-of-code-2022` executable.
+Deletes all build artifacts from the current directory, i.e. the `advent-of-code-2023` executable.
 
 ### make run
 
-Builds the `advent-of-code-2022` executable and runs a single day's solution. Specify the day by setting the `DAY` parameter in the command line. Optionally, you can also set the `LOG_LEVEL` variable, otherwise it will default to `warn`. You can also specify an alternate `INPUT_FILE`, otherwise it will default to `day${DAY}/input.txt`.
+Builds the `advent-of-code-2023` executable and runs a single day's solution. Specify the day by setting the `DAY` parameter in the command line. Optionally, you can also set the `LOG_LEVEL` variable, otherwise it will default to `warn`. You can also specify an alternate `INPUT_FILE`, otherwise it will default to `day${DAY}/input.txt`.
 
 ```
 make run DAY=1 [LOG_LEVEL=trace] [INPUT_FILE={path/to/input/file.txt}]
@@ -44,7 +44,7 @@ make run DAY=1 [LOG_LEVEL=trace] [INPUT_FILE={path/to/input/file.txt}]
 
 ### make run-all
 
-Builds the `advent-of-code-2022` executable and runs all solutions for all days. Optionally, you can also set the `LOG_LEVEL` variable, otherwise it will default to `warn`.
+Builds the `advent-of-code-2023` executable and runs all solutions for all days. Optionally, you can also set the `LOG_LEVEL` variable, otherwise it will default to `warn`.
 
 ```
 make run-all [LOG_LEVEL=trace]
@@ -52,11 +52,11 @@ make run-all [LOG_LEVEL=trace]
 
 ### make install
 
-Builds the `advent-of-code-2022` executable and installs it in the `$GOPATH/bin` directory.
+Builds the `advent-of-code-2023` executable and installs it in the `$GOPATH/bin` directory.
 
 ### make uninstall
 
-Deletes the `advent-of-code-2022` executable from the `$GOPATH/bin` directory.
+Deletes the `advent-of-code-2023` executable from the `$GOPATH/bin` directory.
 
 ## Day 0 Mock Puzzle
 
@@ -64,8 +64,9 @@ This repo also contains a day 0 mock puzzle to do some integration testing of al
 
 ```
 $ make run DAY=0
-go build
-AOC_LOG_LEVEL=warn ./advent-of-code-2022 0
+AOC_LOG_LEVEL=warn ./advent-of-code-2023 0 
+2023 Day 0
 Part 1 Answer: Joe Schmoe
-Part 2 Answer: 38
+Part 2 Answer: 40
+Total Execution Time: 20.024µs
 ```
