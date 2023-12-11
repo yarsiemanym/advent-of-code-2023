@@ -48,7 +48,7 @@ func parseGame(text string) interface{} {
 	turns := common.Split(turnsText, ";")
 
 	for index, turnMatch := range turns {
-		game.Turns = append(game.Turns, parseTurn(index, turnMatch))
+		game.Turns = append(game.Turns, parseTurn(index+1, turnMatch))
 	}
 
 	return game

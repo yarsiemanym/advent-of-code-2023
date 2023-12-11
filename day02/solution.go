@@ -31,6 +31,12 @@ func solvePart1(games []*game) string {
 
 	sumOfValidGameIds := 0
 
+	bagContents := map[Color]int{
+		Red:   12,
+		Green: 13,
+		Blue:  14,
+	}
+
 	for _, game := range games {
 		if game.IsValid(bagContents) {
 			sumOfValidGameIds += game.Id
@@ -54,10 +60,4 @@ func solvePart2(games []*game) string {
 
 	log.Debug("Part 2 solved.")
 	return strconv.Itoa(power)
-}
-
-var bagContents = map[Color]int{
-	Red:   12,
-	Green: 13,
-	Blue:  14,
 }
