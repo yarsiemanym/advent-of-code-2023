@@ -49,7 +49,7 @@ func checkForHelpCommand() {
 
 func printUsage() {
 	limit := uint(100)
-	description1 := "Run the solution for the puzzle from specified day of Advent of Code 2022. If a local copy of your puzzle input does not exist, it will attempt to automatically download it using your session token. When complete, the answers to parts 1 and 2 will be printed to the terminal."
+	description1 := "Run the solution for the puzzle from specified day of Advent of Code 2023. If a local copy of your puzzle input does not exist, it will attempt to automatically download it using your session token. When complete, the answers to parts 1 and 2 will be printed to the terminal."
 	description2 := "Day 0 is a special day with a mock-puzzle to exercise the application before the first real puzzle unlocks."
 
 	fmt.Println(wordwrap.WrapString(description1, limit))
@@ -58,7 +58,7 @@ func printUsage() {
 	fmt.Println("")
 	fmt.Println("Usage:")
 	fmt.Println("")
-	fmt.Println("\tadvent-of-code-2022 <day>")
+	fmt.Println("\tadvent-of-code-2023 <day>")
 	fmt.Println("")
 	fmt.Println("Parameters:")
 	fmt.Println("")
